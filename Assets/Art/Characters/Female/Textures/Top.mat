@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Head
+  m_Name: Top
   m_Shader: {fileID: 4800000, guid: a9f6727ec73efb04a843e31ddf36a690, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -38,7 +38,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 2800000, guid: 3d303057840692e4ba7c168149277915, type: 3}
+        m_Texture: {fileID: 2800000, guid: 24b1c07f7fb6d26439bc40ed7dc91ff5, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
@@ -132,8 +132,8 @@ Material:
     - _BaseColor: {r: 1, g: 0.7294118, b: 0.7294118, a: 0}
     - _Color: {r: 0.99056596, g: 0.74409056, b: 0.65881985, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GColor: {r: 1, g: 0, b: 0, a: 0.003921569}
-    - _RColor: {r: 0, g: 0, b: 0, a: 0.05882353}
+    - _GColor: {r: 1, g: 0.58018863, b: 0.58018863, a: 0}
+    - _RColor: {r: 0.9245283, g: 0.484069, b: 0.484069, a: 0.05882353}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

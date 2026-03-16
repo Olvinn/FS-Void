@@ -73,7 +73,9 @@ Shader "Custom/Character"
                 half3 normalWS = TransformObjectToWorldNormal(IN.normalOS);
                 
                 half4 mask = SAMPLE_TEXTURE2D(_BaseMap, sampler_BaseMap, IN.uv);
-                half4 light = saturate(_BaseColor + _RColor * mask.r + _GColor * mask.g + _BColor * mask.b);
+                half4 light = lerp(_BaseColor, _RColor, max(mask.r, max(mask.g, mask.b)));
+                light = lerp(light, _GColor, max(mask.g, mask.b));
+                light = lerp(light, _BColor, mask.b);
                 
                 half3 ambientColor = SampleSH(normalWS);
                 half4 dark = half4(saturate(light * ambientColor), light.a);
@@ -82,7 +84,7 @@ Shader "Custom/Character"
                 half3 viewDir = normalize(GetCameraPositionWS() - IN.positionWS);
                 half4 color = lerp(dark, light, floor(dot(normalize(mainLight.direction), normalWS) * .5 + 1));
                 
-                color.rgb += BlinnPhongSpecular(normalWS, mainLight.direction, viewDir, mainLight.color, 100) * color.a;
+                color.rgb += BlinnPhongSpecular(normalWS, mainLight.direction, viewDir, mainLight.color, 500 * light.a) * light.a;
                 
                 return color;
             }
