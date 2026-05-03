@@ -20,13 +20,12 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hair
+  m_Name: Shirt
   m_Shader: {fileID: 4800000, guid: a9f6727ec73efb04a843e31ddf36a690, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
-  - _ANISO_ON
   - _BLEND_ON
   - _SPECULAR_ON
   m_LightmapFlags: 4
@@ -101,7 +100,7 @@ Material:
     - _AddPrecomputedVelocity: 0
     - _AlphaClip: 0
     - _AlphaToMask: 0
-    - _Aniso: 1
+    - _Aniso: 0
     - _Blend: 1
     - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
@@ -117,13 +116,13 @@ Material:
     - _GlossMapScale: 0
     - _Glossiness: 0
     - _GlossyReflections: 0
-    - _Metallic: 0.472
+    - _Metallic: 0.5
     - _OcclusionStrength: 1
     - _OutlineThickness: 5
     - _Parallax: 0.005
     - _QueueOffset: 0
     - _ReceiveShadows: 1
-    - _Roughness: 0.162
+    - _Roughness: 0.05
     - _Smoothness: 0.3
     - _SmoothnessTextureChannel: 0
     - _Specular: 1
@@ -135,13 +134,13 @@ Material:
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1
     m_Colors:
-    - _BColor: {r: 0.35849053, g: 0, b: 0, a: 0.015686275}
+    - _BColor: {r: 0.12264145, g: 0.110493, b: 0.110493, a: 0.011764706}
     - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _GColor: {r: 0.29245278, g: 0, b: 0, a: 0}
-    - _OutlineColor: {r: 0.0754717, g: 0, b: 0, a: 1}
-    - _RColor: {r: 0.38679245, g: 0, b: 0, a: 0}
+    - _GColor: {r: 0.18867919, g: 0.17176926, b: 0.17176926, a: 0}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _RColor: {r: 0.14150938, g: 0.1341669, b: 0.1341669, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
